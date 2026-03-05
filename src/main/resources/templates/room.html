@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+</head>
+<body>
+<table>
+    <thead>
+      <tr>
+          <td>Name</td>
+          <td>Number</td>
+          <td>Bed Info</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="room:${rooms}">
+          <td th:text="${room.id}">Id</td>
+          <td th:text="${room.name}">Name</td>
+          <td th:text="${room.number}">Number</td>
+          <td th:text="${room.bedInfo}">Bed Info</td>
+      </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>position</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr th:each="staff:${staffs}">
+          <td th:text="${staff.firstName}">First Name</td>
+          <td th:text="${staff.lastName}">Last Name</td>
+          <td th:text="${staff.position}">Position</td>
+      </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
